@@ -56,14 +56,14 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  // function animalNames(name){
-  //   const displayNames = []
-  //   zooAnimals.forEach(function => {
-  //   displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`);
+  function animalNames(){
+    const displayNames = []
+    zooAnimals.forEach(function => {
+    displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`);
 
-  //   });
-  // }
-  //   console.log(animalNames(displayNames));
+    });
+  }
+    console.log(animalNames(displayNames));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -72,10 +72,10 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  // function lowerCaseNames(){
-  //   const lowerCaseNames = zooAnimals.map(element => element.animal_name.toLowerCase());
-  // }
-  // console.log(lowerCaseNames);
+  function lowerCaseNames(){
+    const lowerCaseNames = zooAnimals.map(element => element.animal_name.toLowerCase());
+  }
+  console.log(lowerCaseNames);
 
 
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -83,11 +83,11 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  // function lowPopulationAnimals(){
-  //   const lowPopulationAnimals = zooAnimals.filter(element => element.population < 5);
-  // }
+  function lowPopulationAnimals(){
+    const lowPopulationAnimals = zooAnimals.filter(element => element.population < 5);
+  }
 
-  // console.log(lowPopulationAnimals);
+  console.log(lowPopulationAnimals);
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -95,11 +95,11 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  // function USApop(){
-  //   const USApop = zooAnimals.reduce((accumulator, currentValue) => accumulator + currentValue.population, 0);
-  // }
+  function USApop(){
+    const USApop = zooAnimals.reduce((accumulator, currentValue) => accumulator + currentValue.population, 0);
+  }
 
-  // console.log(USApop);
+  console.log(USApop);
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -210,9 +210,9 @@ class CuboidMakerTwo{
 console.log(cuboidTwo.volume()); // 100
 console.log(cuboidTwo.surfaceArea()); // 130
 
-  // volume(){
-  //   return this.length * this.width * this.height;
-  // };
+  volume(){
+    return this.length * this.width * this.height;
+  };
 
 
 
