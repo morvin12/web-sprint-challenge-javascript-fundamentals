@@ -90,7 +90,7 @@ const zooAnimals = [
     return population;
   }
 
-  console.log(lowPopulationAnimals(zooAnimals));
+  // console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -100,9 +100,10 @@ const zooAnimals = [
 
   function USApop(array){
     const USApopTotal = array.reduce((accumulator, currentValue) => {accumulator + currentValue.population}, 0);
+    return USApopTotal;
   }
 
-  console.log(USApop(zooAnimals));
+  // console.log(USApop(zooAnimals));
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -135,8 +136,8 @@ function multiply(a, b){
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(firstName, lastName){
-   return `Hello ${firstName} ${lastName}, nice to meet you!`
+function greeting(a, b){
+   return `Hello ${a} ${b}, nice to meet you!`
   }
   
   
@@ -173,7 +174,7 @@ CuboidMaker.prototype.volume = function (){
   Formula for cuboid surface area of a cube: 
   2 * (length * width + length * height + width * height)  */
 CuboidMaker.prototype.surfaceArea = function (){
-  return 2 * (this.length * this.width * this.length * this.height + this.height);
+  return (2*(this.length * this.width * this.length * this.height + this.height));
 }
 
 
